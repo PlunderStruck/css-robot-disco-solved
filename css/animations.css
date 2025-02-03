@@ -1,0 +1,157 @@
+.robot-eye-left {
+  animation: rotate 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-eye-right {
+  animation: scale 2s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.robot-ear-left {
+  animation: fade 2s ease-in-out infinite alternate, move 2s ease-in-out infinite alternate;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20px);
+  }
+}
+
+.robot-ear-right {
+  animation: fade-again 2s ease-in-out infinite alternate, move-again 2s ease-in-out infinite alternate;
+}
+
+@keyframes fade-again {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes move-again {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+.robot-teeth {
+  animation: move-teeth 2s linear infinite;
+  position: relative;
+}
+
+@keyframes move-teeth {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  75% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.robot-nose {
+  transition: all 0.5s ease-in-out;
+}
+
+.robot-nose:hover {
+  animation: opacity 1s ease-in-out infinite alternate;
+}
+
+@keyframes opacity {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.robot-hair-one, .robot-hair-one-two {
+  animation: rotate-hair 2s linear infinite;
+}
+
+@keyframes rotate-hair {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-hair-two, .robot-hair-two-two {
+  animation: rotate-hair-again 2s linear infinite;
+}
+
+@keyframes rotate-hair-again {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.robot-hair-three {
+  animation: color-change 2s linear infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #fffc47;
+  }
+  25% {
+    background-color: #3cb371;
+  }
+  50% {
+    background-color: #ffa500;
+  }
+  75% {
+    background-color: #ee82ee;
+  }
+  100% {
+    background-color: #fffc47;
+  }
+}
